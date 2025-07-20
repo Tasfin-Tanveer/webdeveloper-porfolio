@@ -25,7 +25,7 @@
     border: none;
 }
 .btn-contact{
-    background-color: #fff8f3;
+    background-color: transparent;
     font-weight: bold;
     font-size: 20px;
     color: orange;
@@ -173,4 +173,42 @@ footer input[type="text"], footer textarea{
     padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
+}
+
+/* responsive media query */
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .skills-container,
+    .resume-container,
+    footer,
+    .about-items,
+    .banner,
+    nav,
+    nav > ul{
+        flex-direction: column;
+    }
+    nav>ul{
+        gap: 20px;
+    }
+    .banner{
+        margin: 20px;
+    }
+    .btn-contact{
+        margin-top: 20px;
+    }
+    .banner-profile-pic{
+        width: 100%;
+    }
+    .header{
+        background-image: none;
+    }
+    footer, .about{
+        padding: 20px;        
+    }
+    .footer-col{
+        width: calc(100% - 40px);
+    }
 }
